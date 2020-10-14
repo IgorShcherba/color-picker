@@ -1,0 +1,100 @@
+.root {
+  display: flex;
+  align-items: center;
+  color: #524c4c;
+  width: 250px;
+  height: 48px;
+  font-size: 16px;
+  border: 1px solid #849cac;
+  position: relative;
+  background: #fff;
+}
+
+.field {
+  flex: 1 1;
+  text-align: center;
+}
+
+.slidersBtn,
+.colorsBtn {
+  width: 50px;
+  height: 100%;
+  border-left: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.3s all;
+  vertical-align: middle;
+}
+
+.slidersBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorsBtn:hover {
+  opacity: 0.8;
+}
+
+.slidersPanel,
+.colorsPanel {
+  position: absolute;
+  right: 0;
+  top: 130%;
+  box-shadow: 0px 6px 21px -2px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  background: #fff;
+}
+
+.slidersPanel {
+  right: 50px;
+  padding: 8px;
+}
+
+.colorItem {
+  height: 48px;
+  color: #524c4c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.colorItem:hover {
+  background: #eee;
+  color: #000;
+}
+
+.colorItem.active {
+  background: #eee;
+}
+
+.slidersItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+}
+.actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  color: #fff;
+  border: 1px solid #eee;
+  background-color: #eee;
+  transition: 0.2s all;
+  outline: none;
+  color: #524c4c;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.actions button:hover,
+.actions button:focus {
+  background-color: green;
+  color: #fff;
+  border: 1px solid #000;
+}
